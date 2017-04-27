@@ -8,7 +8,7 @@ namespace TheWorld.Controllers
 {
     public class AppController : Controller
     {
-        public IActionResult Index()
+		public IActionResult Index()
         {
             return View();
         }

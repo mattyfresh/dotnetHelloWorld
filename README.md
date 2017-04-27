@@ -1,2 +1,2 @@
-# dotnetHelloWorld
-Init a dotnet web app with routing
+# Hello World
+A dotnet web app with routing

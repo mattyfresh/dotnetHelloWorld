@@ -2,7 +2,6 @@
 <html>
     <head>
         <meta charset="utf-8" />
-        <script src="~/js/index.js"></script>
         <link rel="stylesheet" href="~/css/index.css" />
         <title>@ViewBag.Title</title>
     </head>
@@ -15,6 +14,12 @@
             </ul>
         </header>
         @RenderBody()
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.slim.min.js"></script>
+
+        <!-- so anything inside of a @section scripts{ `will get rendered here` } -->
+        @RenderSection("scripts", false)
+        <script src="~/js/index.js"></script>
     </body>
 </html>
 

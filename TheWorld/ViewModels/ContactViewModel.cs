@@ -14,6 +14,8 @@ namespace TheWorld.ViewModels
         [Required]
         [StringLength(5000, MinimumLength = 20)]
         public string Message { get; set; }
+
+        public string TestProp = "Sample Prop!";
         
     }
 }

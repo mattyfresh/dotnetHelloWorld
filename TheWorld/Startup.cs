@@ -8,7 +8,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
-
+using TheWorld.Models;
 using TheWorld.Services;
 
 namespace TheWorld
@@ -36,6 +36,9 @@ namespace TheWorld
             services.AddSingleton(_config);
             services.AddScoped<IMailService, DebugMailService>();
             services.AddMvc();
+
+            // make it so we can use our WorldContext for DB stuff anywhere in the app
+            services.AddDbContext<WorldContext>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

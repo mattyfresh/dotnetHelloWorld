@@ -5,5 +5,4 @@ namespace TheWorld.Services
         void SendMail(string to, string from, string subject, string body);            
     }
 
-
 }

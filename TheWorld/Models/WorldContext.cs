@@ -16,10 +16,10 @@ namespace TheWorld.Models
         public DbSet<Trip> Trips { get; set; }
         public DbSet<Stop> Stops { get; set; }
 
-        protected override void OnConfiguring(DbContextOptionsBuilder builder)
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            builder.UseSqlServer(_config["ConnectionStrings:WorldContextConnection"]);
-            base.OnConfiguring(builder);
+            optionsBuilder.UseMySql(_config["ConnectionStrings:WorldContextConnection"]);
+            base.OnConfiguring(optionsBuilder);
         }
     }
 }

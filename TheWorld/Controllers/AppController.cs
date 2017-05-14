@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using TheWorld.Models;
 using TheWorld.Services;
+using TheWorld.ViewModels;
 
 namespace TheWorld.Controllers
 {
@@ -40,7 +41,7 @@ namespace TheWorld.Controllers
         }
 
         [HttpPost]
-        public IActionResult Contact(TheWorld.ViewModels.ContactViewModel model)
+        public IActionResult Contact(ContactViewModel model)
         {	
 
 			// add custom validation

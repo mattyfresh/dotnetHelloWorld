@@ -1,8 +1,0 @@
-{
-    "MailSettings": {
-        "ToAddress" : "coolguy@cool.com"
-    },
-    "ConnectionStrings" : {
-        "WorldContextConnection" : "Server=127.0.0.1;user id=root;Database=TheWorldDb;MultipleActiveResultSets=true;"
-    }
-}
